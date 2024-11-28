@@ -434,7 +434,68 @@ body {
   opacity: 0.8; /* Add hover effect */
 }
 
-/* Responsive Adjustments */
+/* Responsive for Smartphones (360px and below) */
+@media (max-width: 360px) {
+  .footer-logo h1 {
+    font-size: 18px;
+  }
+
+  .footer-links a {
+    font-size: 10px;
+    margin: 0 8px;
+  }
+
+  .footer-icons a img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .gallery-item {
+    flex: 1 1 100%; /* One image per row */
+    margin-bottom: 10px;
+  }
+
+  .flex-item {
+    height: auto; /* Allow height to adjust for content */
+  }
+
+  .text-section,
+  .image-text-section {
+    padding: 15px;
+    text-align: center; /* Center align text for smaller screens */
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center;
+  }
+
+  .nav a {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .contact-button {
+    font-size: 10px;
+    padding: 8px 12px;
+  }
+
+  .main-heading {
+    font-size: 28px;
+  }
+}
+
+/* Responsive Design for Medium Screens (480px and below) */
 @media (max-width: 480px) {
   .footer-logo h1 {
     font-size: 20px;
@@ -449,48 +510,32 @@ body {
     width: 20px;
     height: 20px;
   }
-}
 
-
-@media (max-width: 768px) {
-  .gallery-item {
-    flex: 1 1 calc(50% - 10px); /* Two images per row for medium screens */
-  }
-}
-
-@media (max-width: 480px) {
   .gallery-item {
     flex: 1 1 100%; /* One image per row for small screens */
     max-width: 100%;
   }
-}
 
-/* Responsive Design */
-@media (max-width: 768px) {
   .testimonial-card {
     width: 100%; /* Full width on smaller screens */
   }
 }
 
-/* Responsive Design */
+/* Responsive Design for Medium Screens (768px and below) */
 @media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 10px); /* Two images per row for medium screens */
+  }
+
   .flex-item {
     flex: 1 1 100%;
-    height: 500px; /* Fixed height for the flex item */
+    height: auto; /* Adjust height for smaller screens */
   }
 
-  /* Image Section */
-  .flex-item img {
-    width: 100%; /* Ensure the image takes the full width */
-    height: 100%; /* Ensure the image takes the full height */
-    object-fit: cover; /* Ensure the image covers the container, may crop part of the image */
-  }
-
-  /* Text Section */
   .text-section,
   .image-text-section {
-    height: 500px; /* Fixed height for text section */
     padding: 20px;
+    text-align: center; /* Center align text for better readability */
   }
 
   .header {
@@ -518,6 +563,7 @@ body {
   }
 }
 
+/* Large Screens (1440px and above) */
 @media (min-width: 1440px) {
   .header {
     padding: 20px 80px;
@@ -535,3 +581,4 @@ body {
     font-size: 48px;
   }
 }
+
